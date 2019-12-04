@@ -1,0 +1,22 @@
+{
+ "manifest_version": 2,
+ "name": "FB Feed Ad Remover",
+ "description": "Removes ads from your Facebook feed.",
+ "version": "2.3",
+ "author": "HTMLGuy, LLC",
+ "content_scripts": [
+  {
+    "matches": [
+      "https://www.facebook.com/",
+      "http://www.facebook.com/",
+      "https://facebook.com/",
+      "http://facebook.com/",
+      "https://www.facebook.com/*",
+      "http://www.facebook.com/*",
+      "https://facebook.com/*",
+      "http://facebook.com/*"
+    ],
+    "js": ["slim-jquery.js", "block-ads.js"]
+  }
+ ]
+}
